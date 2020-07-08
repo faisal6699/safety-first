@@ -24,15 +24,17 @@ export default function FacilitiesDetails() {
     <div>
       <div className={classes.section} style={{ marginTop: "20px" }}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={2} className={classes.marginLeft}>
-            <img
+          <GridItem xs={12} sm={2} >
+          <img
               src={image}
               alt="..."
-              className={classes.imgRounded + " " + classes.imgFluid}
+              className={classes.imgRounded}
             />
+            
           </GridItem>
 
           <GridItem xs={12} sm={12} md={8}>
+          
             <h2 className={classes.title}>We Supply & Install</h2>
 
             <ul
@@ -51,15 +53,15 @@ export default function FacilitiesDetails() {
             </ul>
           </GridItem>
         </GridContainer>
-
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={8}>
+        </div>
+        <GridContainer >
+          <GridItem xs={12} sm={12} md={12} >
             <h2 className={classes.title}>
               Our service scope as follows as required by accord/alliance
               incompliance of NFPA
             </h2>
 
-            <ul className={classes.ul_design} style={{ marginLeft: "80px" }}>
+            <ul className={classes.ul_design} style={{padding: '50px'}}>
               <li className={classes.description}>
                 We supply, design, delivery and install by precise calculation
                 required NOS. of detectors, nozzles required for fixed
@@ -69,15 +71,48 @@ export default function FacilitiesDetails() {
                 We install automatic fire control panel, incorporating manual,
                 release station warning sign, alarm bells and discharge sign.
               </li>
-              <li className={classes.description}>Fire sprinkler system</li>
-              <li className={classes.description}>Fire hydrant system</li>
-              <li className={classes.description}>Security alarm system</li>
-              <li className={classes.description}>CC TV system</li>
-              <li className={classes.description}>Navigational equipment</li>
+              <li className={classes.description}>
+                Design, supply, deliver and complete cable works with carbon
+                steel pipes and 30 minutes fire resistence cable.
+              </li>
+              <li className={classes.description}>
+                We do install fix hosereel system for manual/automatic fire
+                protection with water for all kinds of manufacturing company.
+              </li>
+              <li className={classes.description}>
+                Design, supply, deliver and install pipe lines as required
+              </li>
+              <li className={classes.description}>
+                We do install fire hydrunt/hose for manual/automatic fire with
+                water for all kinds of manufacturing company.
+              </li>
+              <li className={classes.description}>
+                We do hydrostatic pressure testing for all kind of fire
+                extinguishers, especially CO2 (45KGS) cylinders of fixed fire
+                supression systems. Here to mention that, we are fully
+                conversent with IMO/SOLAS regulations & local regulations.
+              </li>
+              <li className={classes.description}>
+                We do service, supply all kind of fire extingushers &
+                equipments.
+              </li>
+              <li className={classes.description}>
+                We service & do hydrostatic pressure testing of SCBA cylinders,
+                EEBD cylinders, supply, delivers all kind of Life Saving
+                Appliances.
+              </li>
+              <li className={classes.description}>
+                We service, repair, supply & installed all brand of radar,
+                bridge equipments including GMDSS VHF, INMERSET-C, GPS.
+              </li>
+              <li className={classes.description}>
+                We do load test of all type of cranes/derricks and other lifting
+                appliance.
+              </li>
             </ul>
           </GridItem>
         </GridContainer>
-      </div>
+      
     </div>
   );
 }

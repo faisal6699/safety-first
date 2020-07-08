@@ -20,7 +20,7 @@ import Footer from "../components/Footer/Footer";
 import landingPageStyle from "../assets/jss/material-kit-react/views/landingPage";
 // Sections for this page
 import ProductSection from "./Sections/ProductSection";
-import TeamSection from "./Sections/TeamSection";
+import TeamSection from "./Sections/ContactUs";
 import WorkSection from "./Sections/WorkSection";
 import SectionCarousel from './Sections/SectionCarousel'
 import About from './pages/About'

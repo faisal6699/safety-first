@@ -83,13 +83,13 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="#"
+            href="https://web.facebook.com/faisalador"
             className={aClasses}
             target="_blank"
           >
             Faisal Ahmed
           </a>{" "}
-          for a better web.
+          for Safety First (PVT.) Ltd.
         </div>
       </div>
     </footer>

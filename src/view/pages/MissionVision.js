@@ -22,7 +22,7 @@ import MissionVisionDetails from "../../components/MissionVisionDetails/MissionV
 import styles from "../../assets/jss/material-kit-react/views/landingPageSections/pages/about";
 // Sections for this page
 import ProductSection from "../Sections/ProductSection";
-import TeamSection from "../Sections/TeamSection";
+import TeamSection from "../Sections/ContactUs";
 import WorkSection from "../Sections/WorkSection";
 import SectionCarousel from '../Sections/SectionCarousel'
 

@@ -58,7 +58,7 @@ export default function AboutDetails() {
         <li className={classes.description}>Fire sprinkler system</li>
         <li className={classes.description}>Fire hydrant & sprinkler system</li>
         <li className={classes.description}>Security alarm system</li>
-        <li className={classes.description}>IFixed foam system</li>
+        <li className={classes.description}>Fixed foam system</li>
         <li className={classes.description}>
           Supply & service of all kinds of extinguisher & auxiliary equipments
         </li>

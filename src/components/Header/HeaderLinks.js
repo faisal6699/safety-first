@@ -17,8 +17,8 @@ import { Apps, CloudDownload, CallMissedSharp } from "@material-ui/icons";
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown";
 import Button from "../CustomButtons/Buttons";
-import App from '../../view/App'
-import About from '../../view/pages/About'
+import App from "../../view/App";
+import About from "../../view/pages/About";
 
 import styles from "../../assets/jss/material-kit-react/components/headerLinksStyle";
 
@@ -29,15 +29,10 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <a 
-          href="/"
-          className={classes.navLink}>
+        <a href="/" className={classes.navLink}>
           Home
         </a>
-        
       </ListItem>
-
-
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -45,14 +40,14 @@ export default function HeaderLinks(props) {
           buttonText="About"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <a href= "/About" className={classes.dropdownLink}>
+            <a href="/About" className={classes.dropdownLink}>
               About Us
             </a>,
-         
+
             <a href="/MissionVision" className={classes.dropdownLink}>
               Mission & Vision statement
             </a>,
@@ -65,9 +60,9 @@ export default function HeaderLinks(props) {
             <a href="/Facilities" className={classes.dropdownLink}>
               Our Facility
             </a>,
-            <Link to="#" className={classes.dropdownLink}>
+            <a href="/Subordinates" className={classes.dropdownLink}>
               Our Sub ordinaries
-            </Link>,
+            </a>,
 
             <a
               href="http://www.sfplbd.com/images/Achievement/Certificate/CTF/LBT_MMD_2017.pdf"
@@ -75,24 +70,52 @@ export default function HeaderLinks(props) {
               className={classes.dropdownLink}
             >
               Documentation
-            </a>
+            </a>,
           ]}
         />
       </ListItem>
 
-
-      
       <ListItem className={classes.listItem}>
-        <Button
-          href="/"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          Services
-        </Button>
-      </ListItem>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Services"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent",
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <a href="/Firesprinkler" className={classes.dropdownLink}>
+              Fire Sprinkler System
+            </a>,
 
+            <a href="/Firehydrant" className={classes.dropdownLink}>
+              Fire Hydrant System
+            </a>,
+            <a href="/Fireextinguisher" className={classes.dropdownLink}>
+              Fire Extinguisher
+            </a>,
+            <a href="/Hosereel" className={classes.dropdownLink}>
+              Hose Reel
+            </a>,
+            <a href="/Co2system" className={classes.dropdownLink}>
+              Fixed CO2 system
+            </a>,
+            <a href="/Firealarm" className={classes.dropdownLink}>
+              Fire Alarm System
+            </a>,
+            <a href="/Fm200" className={classes.dropdownLink}>
+              FM-200 System
+            </a>,
+            <a href="/Voiceevacuation" className={classes.dropdownLink}>
+              Voice Evacuation System
+            </a>,
+            <a href="/Firepump" className={classes.dropdownLink}>
+              Fire Pump
+            </a>,
+          ]}
+        />
+      </ListItem>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -100,66 +123,77 @@ export default function HeaderLinks(props) {
           buttonText="Products"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="#" className={classes.dropdownLink}>
+            <a href="/Firedoor" className={classes.dropdownLink}>
               Fire Door Accessories
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
+            </a>,
+            <a href="/Firefightingproducts" className={classes.dropdownLink}>
               Fire Fighting Products
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             Marine Products
-            </Link>,
+            </a>,
+            <a href="/Marineproducts" className={classes.dropdownLink}>
+              Marine Products
+            </a>,
           ]}
         />
       </ListItem>
-      
+
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Achievement"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="#" className={classes.dropdownLink}>
+            <a href="/NSRcertificates" className={classes.dropdownLink}>
               NSR Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
+            </a>,
+            <a href="/Govtcertificates" className={classes.dropdownLink}>
               GOVERNMENT Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             BUREAU Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             DNV-GL Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             RINA Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             NIPPON Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             GERMANISCHAR Certificates
-            </Link>,
-            <Link to="#" className={classes.dropdownLink}>
-             NINGBO Certificates
-            </Link>,
+            </a>,
+            <a href="/BUREAUcertificates" className={classes.dropdownLink}>
+              BUREAU Certificates
+            </a>,
+            <a
+              href="http://www.sfplbd.com/images/Achievement/Certificate/CTF/GLCertificate-up%20to%202022.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              DNV-GL Certificates
+            </a>,
+            <a
+              href="http://www.sfplbd.com/images/Achievement/Certificate/CTF/Service%20and%20Supplier%20approval%20%20certificate%20by%20RINA-2019%20to%202022.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              RINA Certificates
+            </a>,
+            <a href="/NIPPONcertificates" className={classes.dropdownLink}>
+              NIPPON Certificates
+            </a>,
+            <a href="/Germanischercertificates" className={classes.dropdownLink}>
+              GERMANISCHAR Certificates
+            </a>,
+              <a
+              href="http://www.sfplbd.com/images/Achievement/Certificate/CTF/NingBo_LB_Trainingcert.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+               NINGBO Certificates
+            </a>,
           ]}
         />
       </ListItem>
 
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          href="/Partners"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Our Partners
@@ -168,9 +202,8 @@ export default function HeaderLinks(props) {
 
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          href="/Contact"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Contact
@@ -183,8 +216,7 @@ export default function HeaderLinks(props) {
           </IconButton>
         </Tooltip>*/}
 
-
-     {/* <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         
         <Tooltip
           id="instagram-twitter"

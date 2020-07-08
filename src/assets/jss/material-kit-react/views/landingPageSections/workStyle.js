@@ -1,6 +1,17 @@
-import { title } from "../../../material-kit-react";
+import { container,title } from "../../../material-kit-react";
 
 const workStyle = {
+  container: {
+    zIndex: "12",
+    color: "#FFFFFF",
+    ...container
+  },
+  main: {
+    background: "#FFFFFF",
+    position: "relative",
+    zIndex: "0"
+  },
+  
   section: {
     padding: "70px 0"
   },
